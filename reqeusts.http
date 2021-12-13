@@ -1,0 +1,26 @@
+GET http://localhost:8080/api/v1/student/all
+
+###
+
+GET http://localhost:8080/api/v1/student/3/id
+
+###
+
+POST http://localhost:8080/api/v1/student
+Content-Type: application/json
+
+{
+  "firstName": "Anna",
+  "lastName": "Ivanova"
+}
+
+###
+
+PUT http://localhost:8080/api/v1/student
+Content-Type: application/json
+
+{
+  "id": 3,
+  "firstName": "Irina",
+  "lastName": "Ivanova"
+}
