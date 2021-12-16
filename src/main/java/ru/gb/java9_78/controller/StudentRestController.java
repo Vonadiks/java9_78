@@ -30,7 +30,7 @@ public class StudentRestController {
     }
 
     @Transactional
-    @PostMapping
+    @PostMapping()
     public Student create(@RequestBody Student student){
         if (student.getId() != null) {
             throw new BadRequestException();
@@ -39,7 +39,7 @@ public class StudentRestController {
     }
 
     @Transactional
-    @PutMapping
+    @PutMapping()
     public Student update(@RequestBody Student student){
         if (student.getId() == null) {
             throw new BadRequestException();
